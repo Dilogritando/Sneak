@@ -1,0 +1,7 @@
+#For asset files
+*.jpg
+*.png
+assets/
+
+#For resources
+.node_modules
