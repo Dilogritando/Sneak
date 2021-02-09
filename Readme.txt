@@ -3,7 +3,6 @@
 La prueba consta de Maquetar y Desarrollar el home de este diseño.
 
 Condiciones:
-
 *no se pueden utilizar frameworks css.
 *no se puede utilizar jquery, ni frameworks javascript.
 *Puede utilizar run taskers, y preprocesadores css
