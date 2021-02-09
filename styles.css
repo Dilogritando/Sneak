@@ -26,12 +26,10 @@ header {
 }
 
 .navbar {
-    border: orangered solid 1px;
     display: flex;
     height: 35px;
     width: 630px;
     margin: 0;
-    padding: 0 176px 0 0;
 }
 
 .navbar ul {
@@ -64,11 +62,10 @@ a {
     margin: 0;
     padding: 0;
 }
-
-/* #header__navbar--texts {
-
+#header__navbar--texts {
+    border: 2px red solid;
 }
- */
+
 #header__navbar--search {
     height: 100%;
     margin: 0;
@@ -76,6 +73,20 @@ a {
     display: flex;
     text-align: right;
     align-self: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#main_navbar {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 0;
+    margin: 0 0 75px 0;
 }
 
 /* Hero */
@@ -111,7 +122,7 @@ h2 {
     margin: 0 0 60px 0;
 }
 
-button {
+#main__button {
     width: 170px;
     height: 40px;
     color: #ff5773;
@@ -128,8 +139,35 @@ button {
     padding: 0;
 }
 
+#main__display--icons {
+    width: 52px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-self: center;
+    justify-content: space-around;
+    margin: 70px 0 70px 0;
+}
 
+#main__portfolio {
+    display: flex;
+    justify-content: center;
+}
 
+#main__portfolio--mosaic {
+    border: solid 2px purple;
+}
+
+#main__portfolio--button {
+    width: 170px;
+    height: 35px;
+    background-color:#ff5672;
+    color: #ffffff;
+    font-family: Questrial;
+    font-size: 13px;
+    letter-spacing: 2.6px;
+    margin: 40px 0 60px 0;
+}
 /* Footer */
 footer {
     width: 281px;
@@ -153,7 +191,3 @@ footer p{
 #footer__text--brand {
     color: #ff5773;
 }
-
-/* .footer__social--icons {
-    flex-direction: row;
-} */
