@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="./src/index.js"></script>
     <title>Sneak - Simple Portfolio</title>
 
 </head>
@@ -14,14 +14,18 @@
         <figure id="header--logo">
             <img src="./assets/Logo.png" alt="Sneak Logo">
         </figure>
-        <nav class="navbar" id="header__navbar--texts">
+
+        <a href="#" class="toggle_menu" onclick="displayMenu()"><img src="./assets/navigation_icons/menu.svg" alt="Menu options">
+        </a>
+
+        <nav class="navbar" id="header__navbar">
             <ul>
                 <li><a href="#All" className="nav__options">All</a></li>
                 <li><a href="#Branding" className="nav__options">Branding</a></li>
                 <li><a href="#Web" className="nav__options">Web</a></li>
                 <li><a href="#Photography" className="nav__options">Photography</a></li>
                 <li><a href="#App" className="nav__options">App</a></li>
-                <li><a href="#Search" className="nav__options"><img src="./assets/SearchIcon.png" alt="Search Icon" id="header__navbar--search"></a></li>
+                <li><a href="#Search" className="nav__options"><img src="./assets/navigation_icons/SearchIcon.png" alt="Search Icon" id="header__navbar--search"></a></li>
             </ul>
         </nav>
     </header>
@@ -35,9 +39,12 @@
         </section>
 
         <section id="main__display--icons">
-            <a href=""><img src="./assets/BlockIcon.png" alt="Display portfolio by blocks of images"></a>
-            <a href=""><img src="./assets/ColumnIcon.png" alt="Display portfolio by columns"></a>
+            <a href=""><img src="./assets/navigation_icons/BlockIcon.png" alt="Display portfolio by blocks of images"></a>
+            <a href=""><img src="./assets/navigation_icons/ColumnIcon.png" alt="Display portfolio by columns"></a>
         </section>
+
+        <a href="#" class="toggle_menu--main" onclick="displayMenu2()"><img src="./assets/navigation_icons/menu.svg" alt="Menu options">
+        </a>
 
         <nav class="navbar" id="main_navbar">
             <ul>
