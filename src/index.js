@@ -20,12 +20,6 @@ function displayMenu2(){
   }
 }
 
-function append(mosaic, el) {
-return mosaic.appendChild(el);
-}
-
-
-
 fetch(originalURL)
   .then(function (response) {
     /* console.log("El response inicial es: ", response) */
@@ -42,30 +36,8 @@ fetch(originalURL)
           figure.innerHTML = `<img src="${a.url}" alt="Orchids">`;
           mosaic.appendChild(figure);
         });
-    /* console.log('Lista de URL: ', urlArray); */
-
-   /*  urlArray.forEach(newFigure);
-
-    function newFigure (urlArray){
-          for (i in urlArray){
-          let figure = document.createElement("figure");
-          figure.innerHTML = `<img src="${a.url}" alt="Orchids">`;
-          mosaic.appendChild(figure);
-          }
-      } */
-
-    /* return createImages(urlArray); */
-    /* return urlArray; */
   }).catch(error => {
     if (error.status === 404) {
       console.log("Error 404")
     }
 })
-
-
-/* 1) Crear figura
-function (urlArray){
-var figure = document.createElement("figure");
-figure.innerHTML = `<img src="${urlArray[i]}" alt="Orchids">`;
-mosaic.appendChild(figure);
-} */
