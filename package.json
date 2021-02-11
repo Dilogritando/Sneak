@@ -1,0 +1,28 @@
+{
+  "name": "sneak",
+  "version": "1.0.0",
+  "description": "Simple landing page with mosaic gallery and responsive menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dilogritando/Sneak.git"
+  },
+  "author": "Mariana Cortés Rueda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dilogritando/Sneak/issues"
+  },
+  "homepage": "https://github.com/Dilogritando/Sneak#readme",
+  "dependencies": {
+    "masonry-layout": "^4.2.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "webpack": "^5.21.2"
+  }
+}

@@ -1,7 +1,8 @@
 #For asset files
 *.jpg
 *.png
+*.psd
 assets/
 
 #For resources
-.node_modules
+node_modules

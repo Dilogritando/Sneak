@@ -203,7 +203,7 @@ button {
     justify-content: center;
 }
 
-#main__portfolio--mosaic {
+#main__portfolio__mosaic {
     width: 60%;
     height: 1460px;
     margin: 0;
@@ -325,7 +325,7 @@ footer p{
         color: #ffffff;
     }
 
-    #main__portfolio--mosaic{
+    #main__portfolio__mosaic{
         display: flex;
     }
 

@@ -21,14 +21,7 @@ La versión responsive debe llevar un estilo de menú mobile.
 * Tablets: 950- 1089px
 * Mobile: 320px - 425px
 
-
-Masonry - https://masonry.desandro.com/
-
-https://stackoverflow.com/questions/28778048/get-image-from-json-file-using-javascript-and-display-in-html-img-tag
-7
-
-
-Favicon?
-Search?
-Display grande? (after click)
-Comparar entre browsers?
+##Dependencias:
+* Webpack para empaquetar los módulos
+* Babel para compatibilizar entre navegadores y versiones de ES
+* Masonry para el portafolio/grilla de galería
