@@ -209,10 +209,11 @@ button {
     margin: 0;
     align-self: center;
     border: solid 2px purple;
-    display: grid;
+    display: flex;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr auto;
-    gap: 30px;
+    gap: 30px; */
 
 
     /* display: grid;

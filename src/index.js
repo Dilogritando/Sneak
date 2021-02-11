@@ -1,13 +1,8 @@
 var showMenu = document.getElementById("header__navbar");
 var showMenu2 = document.getElementById("main_navbar");
 const mosaic = document.getElementById("main__portfolio__mosaic");
-let lugar = mosaic.innerHTML;
 const originalURL = './src/data_portfolio.json';
-var figure = document.createElement("figure");
-var img = document.createElement("img");
 let urlArray;
-let Contenido = `<p> Aquí hay una imagen <p>`;
-
 
 function displayMenu(){
   if (showMenu.style.display === "none") {
@@ -30,6 +25,7 @@ return mosaic.appendChild(el);
 }
 
 
+
 fetch(originalURL)
   .then(function (response) {
     /* console.log("El response inicial es: ", response) */
@@ -41,11 +37,35 @@ fetch(originalURL)
     /* console.log('Aqui estamos después: ', imgArray); */
     return imgArray;
   }).then(function (imgArray) {
-    let urlArray= imgArray.map(a => a.url);
+    let urlArray= imgArray.map(a => {
+      let figure = document.createElement("figure");
+          figure.innerHTML = `<img src="${a.url}" alt="Orchids">`;
+          mosaic.appendChild(figure);
+        });
     /* console.log('Lista de URL: ', urlArray); */
-    return urlArray;
+
+   /*  urlArray.forEach(newFigure);
+
+    function newFigure (urlArray){
+          for (i in urlArray){
+          let figure = document.createElement("figure");
+          figure.innerHTML = `<img src="${a.url}" alt="Orchids">`;
+          mosaic.appendChild(figure);
+          }
+      } */
+
+    /* return createImages(urlArray); */
+    /* return urlArray; */
   }).catch(error => {
     if (error.status === 404) {
       console.log("Error 404")
     }
 })
+
+
+/* 1) Crear figura
+function (urlArray){
+var figure = document.createElement("figure");
+figure.innerHTML = `<img src="${urlArray[i]}" alt="Orchids">`;
+mosaic.appendChild(figure);
+} */
