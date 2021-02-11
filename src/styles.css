@@ -209,12 +209,14 @@ button {
     margin: 0;
     align-self: center;
     border: solid 2px purple;
-    display: flex;
-    flex-wrap: wrap;
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill, minmax(200px, 370px));
+    grid-template-rows: 1fr auto;
     gap: 30px;
+
+
+    /* display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 370px));
     grid-template-areas:
         "marginleft creative blank1 blank2 marginright"
         "marginleft blank3 blank4 blank5 marginright"
@@ -225,7 +227,7 @@ button {
 
 .main__portfolio--item {
     background-color: #f6f6f6;
-    width: 370px;
+    width: 100%;
     height: fit-content;
     margin: 0;
     padding: 11px 10px;
@@ -273,9 +275,6 @@ footer p{
 #footer__text--brand {
     color: #ff5773;
 }
-
-
-
 
 @media screen and (max-width: 1090px) {
     #header--logo {
@@ -348,8 +347,5 @@ footer p{
         display: none;
     }
 
-
-}
-@media screen and (max-width: 425px) {
 
 }
