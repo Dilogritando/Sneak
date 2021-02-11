@@ -57,7 +57,7 @@
         </nav>
 
         <section id="main__portfolio">
-            <article id="main__portfolio__mosaic">
+            <article class="grid" id="main__portfolio__mosaic" >
             </article>
             <button id="main__portfolio--button">Show Me More</button>
         </section>
@@ -75,5 +75,14 @@
         </div>
     </footer>
      <script src="./src/index.js"></script>
+     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+     <script>
+        var container = document.querySelector('.grid');
+        var msnry = setTimeout(new Masonry( container, {
+            itemSelector: '.grid-item',
+            columnWidth: 50,
+            gutter: 15,
+        }), 9000);
+     </script>
 </body>
 </html>

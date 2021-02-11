@@ -30,6 +30,7 @@ header {
     padding: 0 0 0 160px;
     display: flex;
     justify-content: left;
+    background-color: #ffffff;
 }
 
 .navbar {
@@ -196,6 +197,7 @@ button {
 
 #main__portfolio {
     width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     display: flex;
@@ -204,41 +206,19 @@ button {
 }
 
 #main__portfolio__mosaic {
-    width: 60%;
-    height: 1460px;
-    margin: 0;
-    align-self: center;
-    border: solid 2px purple;
-    display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr auto;
-    gap: 30px; */
-
-
-    /* display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(200px, 370px));
-    grid-template-areas:
-        "marginleft creative blank1 blank2 marginright"
-        "marginleft blank3 blank4 blank5 marginright"
-        "marginleft blank6 blank7 blank8 marginright"
-        "marginleft blank8 marginright";
-    background-color: #611515;*/
-}
-
-.main__portfolio--item {
-    background-color: #f6f6f6;
-    width: 100%;
+    width: 90%;
     height: fit-content;
     margin: 0;
-    padding: 11px 10px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    align-self: center;
+    display: grid;
 }
 
-.main__portfolio--item img {
+.grid-item {
     width: 350px;
+    height: auto;
+    padding: 11px 10px;
+    background-color: #f6f6f6;
+    margin: 0 0 30px 0;
 }
 
 #main__portfolio--button {

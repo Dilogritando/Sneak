@@ -32,9 +32,10 @@ fetch(originalURL)
     return imgArray;
   }).then(function (imgArray) {
     let urlArray= imgArray.map(a => {
-      let figure = document.createElement("figure");
-          figure.innerHTML = `<img src="${a.url}" alt="Orchids">`;
-          mosaic.appendChild(figure);
+      let img = document.createElement("img");
+          img.setAttribute("src", `${a.url}`)
+          img.setAttribute("class", "grid-item")
+          mosaic.appendChild(img);
         });
   }).catch(error => {
     if (error.status === 404) {
