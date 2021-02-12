@@ -77,12 +77,12 @@
      <script src="./src/index.js"></script>
      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
      <script>
-        var container = document.querySelector('.grid');
-        var msnry = setTimeout(new Masonry( container, {
-            itemSelector: '.grid-item',
-            columnWidth: 50,
-            gutter: 15,
-        }), 9000);
+             var container = document.querySelector('.grid');
+            var msnry = new Masonry( container, {
+             itemSelector: '.grid-item',
+             columnWidth: 20,
+             gutter: 10,
+         });
      </script>
 </body>
 </html>

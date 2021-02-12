@@ -328,5 +328,12 @@ footer p{
         display: none;
     }
 
+    .grid-item {
+        width: 200px;
+        height: auto;
+        padding: 11px 10px;
+        background-color: #f6f6f6;
+        margin: 0 0 30px 0;
+    }
 
 }
