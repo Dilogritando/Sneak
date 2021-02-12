@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <figure id="header--logo">
+        <figure class="header--logo" id="header--logo">
             <img src="./assets/Logo.png" alt="Sneak Logo">
         </figure>
 
@@ -25,20 +25,20 @@
                 <li><a href="#Web" className="nav__options">Web</a></li>
                 <li><a href="#Photography" className="nav__options">Photography</a></li>
                 <li><a href="#App" className="nav__options">App</a></li>
-                <li><a href="#Search" className="nav__options"><img src="./assets/navigation_icons/SearchIcon.png" alt="Search Icon" id="header__navbar--search"></a></li>
+                <li><a href="#Search" className="nav__options"><img src="./assets/navigation_icons/SearchIcon.png" alt="Search Icon" class="header__navbar--search"></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="main__hero" alt="Main">
+        <section class="main__hero" alt="Main">
             <h1>EXPLORE BEYOND HORIZON</h1>
             <h2>Magna mundi referrentur quo, no rebum dignissim qui. <br>
                 Per quodsi accusata id, agam labores.</h2>
-            <button id="main__button">VIEW OUR WORK</button>
+            <button class="main__button">VIEW OUR WORK</button>
         </section>
 
-        <section id="main__display--icons">
+        <section class="main__display--icons" id="main__display--icons">
             <a href=""><img src="./assets/navigation_icons/BlockIcon.png" alt="Display portfolio by blocks of images"></a>
             <a href=""><img src="./assets/navigation_icons/ColumnIcon.png" alt="Display portfolio by columns"></a>
         </section>
@@ -56,16 +56,16 @@
             </ul>
         </nav>
 
-        <section id="main__portfolio">
+        <section class="main__portfolio">
             <article class="grid" id="main__portfolio__mosaic" >
             </article>
-            <button id="main__portfolio--button">Show Me More</button>
+            <button class="main__portfolio--button">Show Me More</button>
         </section>
     </main>
 
 
     <footer>
-        <p> 2016 - <span id="footer__text--brand">Sneak</span> All Rights Reserved</p>
+        <p> 2016 - <span class="footer__text--brand">Sneak</span> All Rights Reserved</p>
         <div class="footer__social--icons">
             <a href="https://www.facebook.com/"><img src="./assets/social_icons/Facebook.png" alt="Facebook icon"></a>
             <a href="https://www.twitter.com/"><img src="./assets/social_icons/Twitter.png" alt="Twitter icon"></a>
@@ -75,14 +75,6 @@
         </div>
     </footer>
      <script src="./src/index.js"></script>
-     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-     <script>
-             var container = document.querySelector('.grid');
-            var msnry = new Masonry( container, {
-             itemSelector: '.grid-item',
-             columnWidth: 20,
-             gutter: 10,
-         });
-     </script>
+
 </body>
 </html>
