@@ -1,5 +1,5 @@
-var showMenu = document.getElementById("header__navbar");
-var showMenu2 = document.getElementById("main_navbar");
+const showMenu = document.getElementById("header__navbar");
+const showMenu2 = document.getElementById("main_navbar");
 const mosaic = document.getElementById("main__portfolio__mosaic");
 const originalURL = './src/data_portfolio.json';
 let urlArray;
@@ -23,7 +23,7 @@ function displayMenu2(){
 fetch(originalURL)
   .then(function (response) {
     /* console.log("El response inicial es: ", response) */
-    var jsonFormat = response.json();
+    const jsonFormat = response.json();
     return jsonFormat
   }).then(function (jsonFormat) {
     /* console.log('Aqui estamos primero: ', jsonFormat); */
