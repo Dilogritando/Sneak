@@ -268,11 +268,7 @@ footer p{
 }
 
 @media screen and (max-width: 950px) {
-    .toggle_menu {
-        display: flex;
-    }
-
-    .toggle_menu--main {
+    .toggle_menu, .toggle_menu--main {
         display: flex;
     }
 
